@@ -4,6 +4,12 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
 
+# Download resources (needed for Streamlit Cloud)
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('punkt_tab')
+
+
 # download once
 nltk.download('punkt')
 nltk.download('stopwords')
