@@ -46,7 +46,8 @@ def get_response(tag, user_text):
 st.set_page_config(
     page_title="College Help Chatbot",
     page_icon="🎓",
-    layout="centered"
+    layout="centered",
+    initial_sidebar_state="expanded"
 )
 
 # ---------- CUSTOM CSS ----------
@@ -64,6 +65,7 @@ with st.sidebar:
     st.write("**About**")
     st.write("College Help Assistant")
     st.write("Built with ML + Streamlit")
+    st.write("Built by: Aditi Rana")
 
 
 # ---------- THEME OVERRIDE ----------
@@ -139,16 +141,6 @@ else:
 
 
 
-# ---------- SIDEBAR ----------
-with st.sidebar:
-    st.title("Settings ⚙️")
-
-
-    st.markdown("---")
-    st.write("**About**")
-    st.write("College Help Assistant")
-    st.write("Built with ML + Streamlit")
-
 # ---------- THEME STYLE ----------
 if theme == "Dark":
     st.markdown("""
@@ -172,7 +164,7 @@ if "messages" not in st.session_state:
 # ---------- DISPLAY OLD MESSAGES ----------
 for sender, msg in st.session_state.messages:
     if sender == "You":
-        with st.chat_message("user", avatar="🙂"):
+        with st.chat_message("user", avatar="😃"):
             st.write(msg)
     else:
         with st.chat_message("assistant", avatar="🎓"):
@@ -183,7 +175,7 @@ user_input = st.chat_input("Type your question here...")
 
 if user_input:
 
-    with st.chat_message("user", avatar="🙂"):
+    with st.chat_message("user", avatar="😃"):
         st.write(user_input)
 
     # Typing indicator
