@@ -1,0 +1,237 @@
+{
+  "intents": [
+
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hi",
+        "hello",
+        "hey",
+        "good morning",
+        "good evening",
+        "good afternoon",
+        "hii",
+        "yo",
+        "sup"
+      ],
+      "responses": [
+        "Hello! How can I help you today?",
+        "Hi there! Ask me anything related to college or studies.",
+        "Hey! I am your college help assistant."
+      ]
+    },
+
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you",
+        "see you later",
+        "talk later",
+        "exit",
+        "quit",
+        "ok bye"
+      ],
+      "responses": [
+        "Goodbye! Best of luck with your studies.",
+        "See you later! Feel free to return anytime.",
+        "Bye! Hope I was helpful."
+      ]
+    },
+
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks",
+        "thank you",
+        "thanks a lot",
+        "thank you so much",
+        "appreciate it",
+        "much appreciated"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Happy to help!",
+        "Anytime! Let me know if you need anything else."
+      ]
+    },
+
+    {
+      "tag": "exam_timetable",
+      "patterns": [
+        "mid sem exam",
+        "end sem exam",
+        "holiday list",
+        "class timetable",
+        "exam schedule",
+        "exam dates"
+      ],
+      "responses": {
+        "midsem": [
+          "Mid sem exams are usually announced 1 month before."
+        ],
+        "endsem": [
+          "End sem schedules are posted on the academic calendar."
+        ],
+        "holiday": [
+          "Holiday lists are available in the academic calendar."
+        ],
+        "timetable": [
+          "Timetables are shared by departments or official groups."
+        ],
+        "general": [
+          "Check the academic calendar or college portal for updates."
+        ]
+      }
+    },
+
+    {
+      "tag": "internship_guidance",
+      "patterns": [
+        "government internship",
+        "private internship",
+        "resume for internship",
+        "internship skills",
+        "how to get internship",
+        "internship help"
+      ],
+      "responses": {
+        "government": [
+          "You can apply through official portals like MeitY, DRDO and AICTE."
+        ],
+        "private": [
+          "Use LinkedIn, Internshala and company career pages."
+        ],
+        "resume": [
+          "Keep your resume one page with skills and projects."
+        ],
+        "skills": [
+          "Focus on Python, DSA, ML basics and communication skills."
+        ],
+        "general": [
+          "Apply 2–3 months early and build strong projects."
+        ]
+      }
+    },
+
+    {
+      "tag": "cgpa_details",
+      "patterns": [
+        "cgpa formula",
+        "cgpa",
+        "sgpa",
+        "how to calculate cgpa",
+        "sgpa formula",
+        "good cgpa",
+        "improve cgpa",
+        "cgpa meaning"
+      ],
+      "responses": {
+        "cgpa_formula": [
+          "CGPA = Total Grade Points ÷ Total Credits."
+        ],
+        "cgpa": [
+          "CGPA = Total Grade Points ÷ Total Credits."
+        ],
+        "sgpa_formula": [
+          "SGPA = Sum of (Grade Point × Subject Credits) ÷ Total Semester Credits."
+        ],
+        "sgpa": [
+          "SGPA = Sum of (Grade Point × Subject Credits) ÷ Total Semester Credits."
+        ],
+        "good": [
+          "CGPA above 7 is considered good, above 8 is very strong."
+        ],
+        "improve": [
+          "Revise regularly and solve previous year papers."
+        ],
+        "general": [
+          "CGPA is cumulative performance across semesters."
+        ]
+      }
+    },
+
+    {
+      "tag": "study_tips",
+      "patterns": [
+        "focus while studying",
+        "study hours",
+        "revision tips",
+        "how to focus",
+        "how many hours to study",
+        "exam revision"
+      ],
+      "responses": {
+        "focus": [
+          "Use Pomodoro method: 25 minutes study, 5 minutes break."
+        ],
+        "hours": [
+          "2–3 focused hours daily are effective."
+        ],
+        "revision": [
+          "Make short notes and revise key formulas."
+        ],
+        "general": [
+          "Maintain a daily planner and avoid distractions."
+        ]
+      }
+    },
+
+    {
+      "tag": "societies_clubs",
+      "patterns": [
+        "technical societies",
+        "technical",
+        "coding",
+        "tech",
+        "coding club",
+        "robotics club",
+        "robotics",
+        "cultural club",
+        "cultural",
+        "sports club",
+        "sports",
+        "college societies",
+        "join clubs"
+      ],
+      "responses": {
+        "technical_societies": [
+          "You can join coding, robotics, AI or cybersecurity societies."
+        ],
+        "tech": [
+          "You can join coding, robotics, AI or cybersecurity societies."
+        ],
+        "technical": [
+          "You can join coding, robotics, AI or cybersecurity societies."
+        ],
+        "cultural": [
+          "Cultural societies include dance, drama and music clubs."
+        ],
+        "cultural_club": [
+          "Cultural societies include dance, drama and music clubs."
+        ],
+        "sports": [
+          "Sports clubs include football, cricket and badminton teams."
+        ],
+        "sports_club": [
+          "Sports clubs include football, cricket and badminton teams."
+        ],
+        "general": [
+          "Check the student activity cell or notice board for recruitment."
+        ]
+      }
+    },
+
+    {
+      "tag": "unknown",
+      "patterns": [],
+      "responses": [
+        "Sorry, I didn’t understand that.",
+        "Could you rephrase your question?",
+        "I’m not sure about that, try asking differently."
+      ]
+    }
+
+  ]
+}
